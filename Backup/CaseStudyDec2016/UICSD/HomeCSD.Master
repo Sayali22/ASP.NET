@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HomeCSD.master.cs" Inherits="CaseStudyDec2016.UICSD.HomeCSD" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body alink="#ccffff">
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+            <p>
+                &nbsp;</p>
+            <p>
+                <asp:ImageButton ID="ImageButton1" runat="server" Height="108px" 
+                    ImageUrl="~/CommonCSD/Images/MasterPage LOGO.png" Width="855px" onclick="ImageButton1_Click" 
+                    />
+            </p>
+            <p align="left">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:ImageButton ID="ImageButton2" runat="server" 
+                    ImageUrl="~/CommonCSD/Images/UnSelectedEmployee.JPG" 
+                    CausesValidation="False" onclick="ImageButton2_Click" PostBackUrl="~/UICSD/SearchEmployeeCSD.aspx" 
+                     />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:ImageButton ID="ImageButton3" runat="server" 
+                    ImageUrl="~/CommonCSD/Images/UnSelectedCategory.JPG" 
+                    CausesValidation="False" onclick="ImageButton3_Click" PostBackUrl="~/UICSD/SearchCategoryCSD.aspx" 
+                    />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:ImageButton ID="ImageButton4" runat="server" 
+                    ImageUrl="~/CommonCSD/Images/UnSelectedProject.JPG" 
+                    onclick="ImageButton4_Click" CausesValidation="False" PostBackUrl="~/UICSD/SearchProjectCSD.aspx" 
+                     />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:ImageButton ID="ImageButton5" runat="server" 
+                    ImageUrl="~/CommonCSD/Images/UnSelectedSkill.JPG" CausesValidation="False" 
+                    onclick="ImageButton5_Click" PostBackUrl="~/UICSD/SearchSkillCSD.aspx" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:HyperLink ID="HyperLink1" runat="server" 
+                    NavigateUrl="~/UICSD/LoginCSD.aspx" 
+                    style="font-weight: 700; background-color: #CCFFFF">LogOut</asp:HyperLink>
+            </p>
+            <p>
+            </p>
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        <p style="color: #000099; background-color: #CCFFFF">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </p>
+    </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
